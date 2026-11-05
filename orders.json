@@ -3,15 +3,82 @@
         "id": 1,
         "items": [
             {
-                "product_id": "2",
-                "quantity": "4"
+                "product_id": "1",
+                "quantity": "3"
+            }
+        ],
+        "total": 342.0,
+        "status": "CLOESED"
+    },
+    {
+        "id": 2,
+        "items": [
+            {
+                "product_id": "4",
+                "quantity": "8"
+            }
+        ],
+        "total": 1360.0,
+        "status": "CLOESED"
+    },
+    {
+        "id": 3,
+        "items": [
+            {
+                "product_id": "1",
+                "quantity": "2"
             },
             {
                 "product_id": "3",
-                "quantity": "5"
+                "quantity": "1"
             }
         ],
-        "total": 4129.0,
-        "status": "closed"
+        "total": 1050.0,
+        "status": "OPEN"
+    },
+    {
+        "id": 4,
+        "items": [
+            {
+                "product_id": "1",
+                "quantity": "2"
+            },
+            {
+                "product_id": "3",
+                "quantity": "1"
+            }
+        ],
+        "total": 1050.0,
+        "status": "OPEN"
+    },
+    {
+        "id": 5,
+        "items": [
+            {
+                "product_id": "1",
+                "quantity": "2"
+            },
+            {
+                "product_id": "3",
+                "quantity": "1"
+            }
+        ],
+        "total": 1050.0,
+        "status": "CLOESED"
+    },
+    {
+        "id": 6,
+        "items": [
+            {
+                "product_id": "1",
+                "quantity": "2"
+            },
+            {
+                "product_id": "3",
+                "quantity": "1"
+            }
+        ],
+        "total": 1026.0,
+        "status": "OPEN"
     }
 ]

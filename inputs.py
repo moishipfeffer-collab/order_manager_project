@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO,format="%(levelname)s %(message)s")
 
 def get_product_id():
     while True:
-        product_id = input("enter product id: ")
+        product_id = input("\nenter product id: ")
         if not check_num(product_id):
             logging.error("the id must be a positive number ")
             continue

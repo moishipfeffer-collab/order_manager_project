@@ -17,6 +17,7 @@ def main():
         elif choise == "5":
             show_sales_report(orders)
         elif choise == "0":
+            print("goodby!")
             break
 
 main()

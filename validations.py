@@ -11,4 +11,7 @@ def check_product_id(product_id):
         if p["id"] == int(product_id):
             return True
 
-
+def check_if_open(order):
+    if order["status"] == "OPEN":
+        return True
+    return False

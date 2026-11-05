@@ -24,11 +24,11 @@ def calc_discount(price):
     if price < FIVE_PERCENT:
         return price 
     elif price < TEN_PERCENT:
-        return price - (price / 100 * 5)
+        return price *(1 - 5 / 100) 
     elif price < FIFTEEN_PERCENT:
-        return price - (price / 100 * 10)
+        return price * (1 - 10 / 100)
     else:
-        return price - (price / 100 * 15)
+        return price * (1 - 15 / 100) 
 
 def create_item(product_id,amount):
     items = {"product_id": product_id,"quantity":amount}
@@ -39,10 +39,7 @@ def create_order(counter, items, total, status):
     return order
 
 def get_orders_num(orders):
-    count = 0
-    for order in orders:
-        count += 1
-    return count
+    return len(orders)
 
 def get_income(orders):
     income = 0
@@ -66,3 +63,8 @@ def sort_orders(orders):
 
 def get_3_expensive_orders(sorted_orders):
     return sorted_orders[:3]
+
+def check_if_3(three_expensive):
+    if len(three_expensive) == 3:
+        return True
+    return False
