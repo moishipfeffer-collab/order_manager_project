@@ -37,3 +37,32 @@ def create_item(product_id,amount):
 def create_order(counter, items, total, status):
     order = {"id": counter +1, "items":items, "total":total, "status":status}
     return order
+
+def get_orders_num(orders):
+    count = 0
+    for order in orders:
+        count += 1
+    return count
+
+def get_income(orders):
+    income = 0
+    for order in orders:
+        if order["status"] == "closed":
+            income += order["total"]
+    return income
+
+def get_most_expensive_order(orders):
+    highest = 0
+    highest_order = ""
+    for order in orders:
+        if int(order["total"]) > highest:
+            highest = order["total"]
+            highest_order = order
+    return highest_order
+
+def sort_orders(orders):
+    sorted_orders = sorted(orders,key=lambda o: o["total"],reverse=True)
+    return sorted_orders
+
+def get_3_expensive_orders(sorted_orders):
+    return sorted_orders[:3]

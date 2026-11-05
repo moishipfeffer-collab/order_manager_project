@@ -4,25 +4,14 @@
         "items": [
             {
                 "product_id": "2",
-                "quantity": "3"
+                "quantity": "4"
             },
             {
                 "product_id": "3",
-                "quantity": "4"
+                "quantity": "5"
             }
         ],
-        "total": 3300.0,
-        "status": "open"
-    },
-    {
-        "id": 2,
-        "items": [
-            {
-                "product_id": "2",
-                "quantity": "3"
-            }
-        ],
-        "total": 240,
-        "status": "open"
+        "total": 4129.0,
+        "status": "closed"
     }
 ]

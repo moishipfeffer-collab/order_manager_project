@@ -23,14 +23,14 @@ def get_amount():
 
 def check_another_order():
     while True:
-        another_order = input("do you want to order sum more?\n1. yes\n2. no\n choose: ")
+        another_order = input("do you want to order sum more?\n1. yes\n2. no\nchoose: ")
         if another_order in ["1","2"]:
             if another_order == "1":
                 return True
             return
         logging.error("not valid choise")
 
-def get_order_id(orders):
+def get_order_id():
     while True:
         order_id = input("enter order id: ")
         if check_num(order_id):
